@@ -1,4 +1,5 @@
 def count_occurrences(stringList, queries):
+
     # result = []
     # for query in queries:
     #     count = 0
@@ -9,6 +10,7 @@ def count_occurrences(stringList, queries):
     
     # return result
 
+#Approach 2
     count_dict = {}
     for string in stringList:
         if string in count_dict:
