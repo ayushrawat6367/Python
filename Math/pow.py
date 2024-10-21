@@ -23,15 +23,17 @@ class Solution:
         
         return result
 
-
+#Example 1
 x = 2.00000
 n = 10
 print(Solution().myPow(x, n))
 
+#Example 2
 x = 2.10000
 n = 3
 print(Solution().myPow(x, n))
 
+#Example 3
 x = 2.00000
 n = -2
 print(Solution().myPow(x, n))
