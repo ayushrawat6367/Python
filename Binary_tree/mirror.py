@@ -42,5 +42,8 @@ if __name__ == "__main__":
     root2.right.right = TreeNode(3)
 
     solution = Solution()
-    print(solution.isSymmetric(root1))  # Output: True
-    print(solution.isSymmetric(root2))  # Output: False
+    #Root 1
+    print(solution.isSymmetric(root1))
+
+    #Root 2
+    print(solution.isSymmetric(root2))
