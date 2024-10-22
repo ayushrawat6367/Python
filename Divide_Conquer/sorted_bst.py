@@ -6,7 +6,6 @@ class TreeNode:
         self.right = right
 
 def sortedArrayToBST(nums):
-    # Base case: if the array is empty, return None
     if not nums:
         return None
     
@@ -50,12 +49,12 @@ def printTree(root):
     
     return result
 
+#Examples
 nums1 = [-10, -3, 0, 5, 9]
 nums2 = [1, 3]
 
 bst1 = sortedArrayToBST(nums1)
 bst2 = sortedArrayToBST(nums2)
 
-# Output the results
 print(printTree(bst1))
 print(printTree(bst2))
