@@ -1,4 +1,3 @@
-# Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -22,8 +21,6 @@ def sortedArrayToBST(nums):
     root.right = sortedArrayToBST(nums[mid+1:])
     
     return root
-
-# Helper function to print the tree in level-order (to visualize it)
 from collections import deque
 
 def printTree(root):
