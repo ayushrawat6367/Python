@@ -7,17 +7,13 @@ class TreeNode:
 def sortedArrayToBST(nums):
     if not nums:
         return None
-    
-    # Find the middle index
+
     mid = len(nums) // 2
     
-    # Create a TreeNode with the middle value
     root = TreeNode(nums[mid])
     
-    # Recursively create the left subtree from the left subarray
     root.left = sortedArrayToBST(nums[:mid])
     
-    # Recursively create the right subtree from the right subarray
     root.right = sortedArrayToBST(nums[mid+1:])
     
     return root
