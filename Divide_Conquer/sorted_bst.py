@@ -1,3 +1,5 @@
+from collections import deque
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -17,7 +19,6 @@ def sortedArrayToBST(nums):
     root.right = sortedArrayToBST(nums[mid+1:])
     
     return root
-from collections import deque
 
 def printTree(root):
     if not root:
