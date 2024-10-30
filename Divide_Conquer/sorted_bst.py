@@ -43,7 +43,6 @@ def printTree(root):
     
     return result
 
-#Examples
 nums1 = [-10, -3, 0, 5, 9]
 nums2 = [1, 3]
 
