@@ -9,7 +9,10 @@ class Solution:
     
 
 # Test cases
+#1
 print(Solution().isPalindrome(121))
+#2
 print(Solution().isPalindrome(-121))
+#3
 print(Solution().isPalindrome(10))
 
