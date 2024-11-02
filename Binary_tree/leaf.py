@@ -1,4 +1,3 @@
-# Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -21,7 +20,6 @@ class Solution:
         return (self.hasPathSum(root.left, targetSum) or 
                 self.hasPathSum(root.right, targetSum))
 
-# Helper function to create a binary tree from a list
 def build_tree(nodes, index=0):
     if index >= len(nodes) or nodes[index] is None:
         return None
@@ -30,7 +28,7 @@ def build_tree(nodes, index=0):
     root.right = build_tree(nodes, 2 * index + 2)
     return root
 
-# Example usage
+#Examples
 if __name__ == "__main__":
     tree1 = build_tree([5,4,8,11,None,13,4,7,2,None,None,None,1])
     solution = Solution()
