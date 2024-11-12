@@ -14,7 +14,6 @@ class Solution:
         if not root.left and not root.right:
             return targetSum == root.val
         
-        # Recursively check left and right subtrees, subtracting the current node's value from targetSum
         targetSum -= root.val
         
         return (self.hasPathSum(root.left, targetSum) or 
